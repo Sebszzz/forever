@@ -1,7 +1,4 @@
 
-// alert('Javascript is connected!');
+// Get all the section elements
+var sections = document.querySelectorAll('.section');
 
-
-// function testFunction() {
-//     alert("javascript file is linked");
-//   }
