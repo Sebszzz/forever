@@ -2,113 +2,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Long Vertical Scrolling Website</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		/* Add styles for the body */
-		body {
-			margin: 0;
-			padding: 0;
-			font-family: Arial, sans-serif;
-		}
-
-		/* Add styles for the sections */
-		section {
-			min-height: 100vh;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		/* Add styles for the content of the sections */
-		.section-content {
-			max-width: 960px;
-			margin: 0 auto;
-			padding: 20px;
-			text-align: center;
-		}
-
-		/* Add styles for the header */
-		header {
-			position: fixed;
-			top: 0;
-			left: 0;
-			right: 0;
-			background-color: #FFFFFF;
-			z-index: 1;
-			padding: 20px;
-			box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
-		}
-
-		/* Add styles for the navigation links */
-		nav {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-		}
-
-		nav a {
-			color: #666666;
-			text-decoration: none;
-			font-size: 18px;
-			margin: 0 10px;
-		}
-
-		nav a:hover {
-			color: #333333;
-		}
-	</style>
+	<title>Pop-up Buttons</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<header>
-		<nav>
-			<a href="#home">Home</a>
-			<a href="#about">About</a>
-			<a href="#services">Services</a>
-			<a href="#portfolio">Portfolio</a>
-			<a href="#contact">Contact</a>
-		</nav>
-	</header>
-
-	<section id="home">
-		<div class="section-content">
-			<h1>Welcome to My Website</h1>
-			<p>This is a simple long vertical scrolling website.</p>
+	<div class="container">
+		<h1>Scroll down to see pop-up buttons</h1>
+		<div class="popup-container">
+			<div class="popup" id="popup1">
+				<p>Do you want to choose option 1 or option 2?</p>
+				<button onclick="chooseOption('option1')">Option 1</button>
+				<button onclick="chooseOption('option2')">Option 2</button>
+			</div>
 		</div>
-	</section>
-
-	<section id="about">
-		<div class="section-content">
-			<h2>About Us</h2>
-			<p>We are a small web design company that specializes in creating beautiful and functional websites.</p>
-		</div>
-	</section>
-
-	<section id="services">
-		<div class="section-content">
-			<h2>Our Services</h2>
-			<ul>
-				<li>Web Design</li>
-				<li>Web Development</li>
-				<li>Search Engine Optimization</li>
-				<li>Social Media Marketing</li>
-				<li>Content Creation</li>
-			</ul>
-		</div>
-	</section>
-
-	<section id="portfolio">
-		<div class="section-content">
-			<h2>Our Portfolio</h2>
-			<p>Here are some of the websites we have created:</p>
-			<ul>
-				<li><a href="#">Example Website 1</a></li>
-				<li><a href="#">Example Website 2</a></li>
-				<li><a href="#">Example Website 3</a></li>
-			</ul>
-		</div>
-	</section>
-
-	<section id="contact">
-		<div class="section-content">
-			<h2>Contact Us</h2>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
