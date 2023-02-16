@@ -1,117 +1,16 @@
-/* Define styles for the pop up buttons */
-.pop-up-button {
-  display: none;
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  z-index: 1;
-  padding: 15px;
-  background-color: #4CAF50;
-  color: #FFFFFF;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 20px;
-  cursor: pointer;
-  transition: opacity 0.3s ease-in-out;
+.container {
+	height: 2000px;
 }
 
-/* Define styles for the active state of the pop up buttons */
-.pop-up-button.active {
-  opacity: 1;
+.popup-container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
-/* Define styles for the sections that trigger the pop up buttons */
-.section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Define styles for the content of the sections */
-.section-content {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Define styles for the body */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Define styles for the pop up boxes */
 .popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-/* Define styles for the pop up content */
-.popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #FFFFFF;
-  padding: 20px;
-  border-radius: 4px;
-  max-width: 400px;
-}
-
-/* Define styles for the close button */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #999999;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Define styles for the overlay */
-.overlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1;
-}
-
-/* Define styles for the overlay content */
-.overlay-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #FFFFFF;
-  padding: 20px;
-  border-radius: 4px;
-  max-width: 400px;
-  text-align: center;
-}
-
-/* Define styles for the overlay close button */
-.overlay-close {
-  display: block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #4CAF50;
-  color: #FFFFFF;
-  border-radius: 4px;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
+	background-color: white;
+	padding: 20px;
+	border: 1px solid black;
 }
